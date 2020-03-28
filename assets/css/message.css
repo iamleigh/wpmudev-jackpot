@@ -11,7 +11,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 0;
+	padding: 20px;
+	border: 0;
 	background-color: rgba(0,0,0,0.6);
+	text-align: center;
 }
 
 #machine-notice.active {
@@ -22,7 +26,11 @@
 
 #machine-notice p {
 	margin: 0;
-	padding: 10px;
+	padding: 20px;
 	border: 0;
+	border-radius: 4px;
 	background-color: #fff;
+	box-shadow: 0 4px 8px 1px rgba(0,0,0,0.4);
+	font-size: 16px;
+	line-height: 22px;
 }

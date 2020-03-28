@@ -33,7 +33,7 @@
 			btnStop.setAttribute( 'disabled', '' );
 			setTimeout( function() {
 				var child = document.createElement( 'p' );
-				child.innerHTML = 'Before spinning again wash your hands. #COVIDsafe';
+				child.innerHTML = 'Spin button will appear again in 20 seconds. Wash your hands while you wait.<br /><strong>#COVIDsafe</strong>';
 				notice.classList.add( 'active' );
 				notice.append( child );
 			}, 2000 );
