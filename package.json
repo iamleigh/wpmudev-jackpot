@@ -1,6 +1,6 @@
 {
 	"name": "jackpot",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "",
 	"author": "Leighton Sapir (WPMU DEV Team)",
 	"contributors": [
@@ -18,18 +18,24 @@
 	},
 	"devDependencies": {
 		"fs": "0.0.1-security",
-		"gh-pages": "^2.2.0",
+		"gh-pages": "^2.1.1",
 		"gulp": "3.9.1",
+		"gulp-clean": "^0.4.0",
+		"gulp-clean-css": "3.10.0",
 		"gulp-watch": "^5.0.1",
 		"jquery": "^3.4.1",
-		"jquery-slotmachine": "^4.0.1"
+		"lodash.template": "^4.5.0",
+		"pump": "^3.0.0"
 	},
 	"scripts": {
-		"clean": "rm -rf _dist/",
-		"build": "npm run clean && gulp copy-required && gulp prepare-files",
-		"publish": "gulp publish:master && gulp publish:showcase",
-		"release:patch": "npm version patch --no-git-tag-version && npm run build && npm run publish",
-		"release:minor": "npm version minor --no-git-tag-version && npm run build && npm run publish",
-		"release:major": "npm version major --no-git-tag-version && npm run build && npm run publish"
+		"clean:modules": "rm -rf ./node_modules/ && rm -rf ./package-lock.json",
+		"clean:ghpages": "rm -rf node_modules/gh-pages/.cache",
+		"build:files": "gulp prepare-files",
+		"build:all": "gulp copy-required && npm run build:files",
+		"publish:master": "npm run clean:ghpages && gulp publish:master",
+		"publish:showcase": "npm run clean:ghpages && gulp publish:showcase",
+		"release:patch": "npm version patch --no-git-tag-version && npm run build:all && npm run publish:showcase && npm run publish:master",
+		"release:minor": "npm version minor --no-git-tag-version && npm run build:all && npm run publish:showcase && npm run publish:master",
+		"release:major": "npm version major --no-git-tag-version && npm run build:all && npm run publish:showcase && npm run publish:master"
 	}
 }
