@@ -24,6 +24,7 @@
 		mCasino1.shuffle(9999);
 		mCasino2.shuffle(9999);
 		mCasino3.shuffle(9999);
+		btnShuffle.setAttribute( 'disabled', '' );
 		btnStop.removeAttribute( 'disabled' );
 	  });
 
@@ -38,6 +39,7 @@
 		  case 1:
 			mCasino3.stop();
 			btnStop.setAttribute( 'disabled', '' );
+			btnShuffle.removeAttribute( 'disabled' );
 			break;
 		}
 		count--;
