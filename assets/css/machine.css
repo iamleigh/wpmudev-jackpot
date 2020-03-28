@@ -1,0 +1,166 @@
+.jackpot-machine .slot-machine [class*="img-"] {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: contain;
+}
+
+.jackpot-machine .slot-machine .position-left {
+	background-position: bottom right;
+}
+
+.jackpot-machine .slot-machine .position-right {
+	background-position: bottom left;
+}
+
+.jackpot-machine .img-one {
+	background-image: url('../images/img-one.png');
+	background-image: -webkit-image-set(
+		url('../images/img-one.png') 1x,
+		url('../images/img-one@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-two {
+	background-image: url('../images/img-two.png');
+	background-image: -webkit-image-set(
+		url('../images/img-two.png') 1x,
+		url('../images/img-two@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-three {
+	background-image: url('../images/img-three.png');
+	background-image: -webkit-image-set(
+		url('../images/img-three.png') 1x,
+		url('../images/img-three@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-four {
+	background-image: url('../images/img-four.png');
+	background-image: -webkit-image-set(
+		url('../images/img-four.png') 1x,
+		url('../images/img-four@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-five {
+	background-image: url('../images/img-five.png');
+	background-image: -webkit-image-set(
+		url('../images/img-five.png') 1x,
+		url('../images/img-five@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-six {
+	background-image: url('../images/img-six.png');
+	background-image: -webkit-image-set(
+		url('../images/img-six.png') 1x,
+		url('../images/img-six@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-seven {
+	background-image: url('../images/img-seven.png');
+	background-image: -webkit-image-set(
+		url('../images/img-seven.png') 1x,
+		url('../images/img-seven@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-eight {
+	background-image: url('../images/img-eight.png');
+	background-image: -webkit-image-set(
+		url('../images/img-eight.png') 1x,
+		url('../images/img-eight@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-nine {
+	background-image: url('../images/img-nine.png');
+	background-image: -webkit-image-set(
+		url('../images/img-nine.png') 1x,
+		url('../images/img-nine@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-ten {
+	background-image: url('../images/img-ten.png');
+	background-image: -webkit-image-set(
+		url('../images/img-ten.png') 1x,
+		url('../images/img-ten@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-eleven {
+	background-image: url('../images/img-eleven.png');
+	background-image: -webkit-image-set(
+		url('../images/img-eleven.png') 1x,
+		url('../images/img-eleven@2x.png') 2x
+	);
+}
+
+.jackpot-machine .img-twelve {
+	background-image: url('../images/img-twelve.png');
+	background-image: -webkit-image-set(
+		url('../images/img-twelve.png') 1x,
+		url('../images/img-twelve@2x.png') 2x
+	);
+}
+
+/** Retina **/
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+	#my-machine-slots .img-one {
+		background-image: url('../images/img-one@2x.png');
+	}
+
+	#my-machine-slots .img-two {
+		background-image: url('../images/img-two@2x.png');
+	}
+
+	#my-machine-slots .img-three {
+		background-image: url('../images/img-three@2x.png');
+	}
+
+	#my-machine-slots .img-four {
+		background-image: url('../images/img-four@2x.png');
+	}
+
+	#my-machine-slots .img-five {
+		background-image: url('../images/img-five@2x.png');
+	}
+
+	#my-machine-slots .img-six {
+		background-image: url('../images/img-six@2x.png');
+	}
+
+	#my-machine-slots .img-seven {
+		background-image: url('../images/img-seven@2x.png');
+	}
+
+	#my-machine-slots .img-eight {
+		background-image: url('../images/img-eight@2x.png');
+	}
+
+	#my-machine-slots .img-nine {
+		background-image: url('../images/img-nine@2x.png');
+	}
+
+	#my-machine-slots .img-twelve {
+		background-image: url('../images/img-twelve@2x.png');
+	}
+
+	#my-machine-slots .img-eleven {
+		background-image: url('../images/img-eleven@2x.png');
+	}
+
+	#my-machine-slots .img-ten {
+		background-image: url('../images/img-ten@2x.png');
+	}
+}

@@ -4,46 +4,47 @@
 	<head>
 
 		<title>WPMU DEV Jackpot</title>
-		<link rel="stylesheet" href="assets/css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/base.css">
+		<link rel="stylesheet" href="assets/css/machine.css">
+		<link rel="stylesheet" href="assets/css/buttons.css">
 		<link rel="stylesheet" href="assets/css/jquery.slotmachine.min.css">
 
 	</head>
 
 	<body>
 
-		<div class="container">
+		<div class="jackpot-wrapper">
 
-			<div id="my-machine">
+			<div class="jackpot-machine" aria-hidden="true">
 
 				<div id="casino1" class="slot-machine">
-					<div class="img-one">Mushroom</div>
-					<div class="img-two">Coin</div>
-					<div class="img-three">Mario</div>
+					<div class="img-one position-left"></div>
+					<div class="img-two position-left"></div>
+					<div class="img-three position-left"></div>
+					<div class="img-four position-left"></div>
+					<div class="img-five position-left"></div>
+					<div class="img-six position-left"></div>
 				</div>
 
 				<div id="casino2" class="slot-machine">
-					<div class="img-one">Mushroom</div>
-					<div class="img-two">Coin</div>
-					<div class="img-three">Mario</div>
-				</div>
-
-				<div id="casino3" class="slot-machine">
-					<div class="img-one">Mushroom</div>
-					<div class="img-two">Coin</div>
-					<div class="img-three">Mario</div>
+					<div class="img-seven position-right"></div>
+					<div class="img-eight position-right"></div>
+					<div class="img-nine position-right"></div>
+					<div class="img-ten position-right"></div>
+					<div class="img-eleven position-right"></div>
+					<div class="img-twelve position-right"></div>
 				</div>
 
 			</div>
 
-			<div id="my-machine-buttons">
+			<div class="jackpot-buttons">
 
 				<button id="machine-spin">Spin</button>
 
 				<button id="machine-stop" disabled>Stop</button>
 
 			</div>
-
-			<div id="my-machine-result"></div>
 
 		</div>
 

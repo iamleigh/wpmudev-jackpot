@@ -1,0 +1,89 @@
+button {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+button:disabled,
+button[disabled] {
+	opacity: 0;
+	display: none;
+}
+
+.jackpot-buttons {
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.jackpot-buttons button {
+	min-width: 1px;
+	flex: 1;
+}
+
+.jackpot-buttons #machine-spin {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 100%;
+	background-color: #FFD000;
+	box-shadow: 0px 8px 12px 2px rgba(0,0,0,0.3), inset 0 0 8px 0px rgba(0,0,0,0.4);
+	font-size: 30px;
+	line-height: 400px;
+}
+
+.jackpot-buttons #machine-spin:focus,
+.jackpot-buttons #machine-spin:active {
+	border: 8px solid #FFD000;
+	line-height: 384px;
+}
+
+.jackpot-buttons #machine-stop {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 100%;
+	background-color: red;
+	box-shadow: 0 4px 8px 1px rgba(0,0,0,0.8), inset 0 0 0 5px #fff;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+@media screen and (min-width: 441px) and (max-width: 600px) {
+	.jackpot-buttons #machine-spin {
+		width: 300px;
+		height: 300px;
+		line-height: 300px;
+	}
+	.jackpot-buttons #machine-spin:focus,
+	.jackpot-buttons #machine-spin:active {
+		line-height: 284px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.jackpot-buttons #machine-spin {
+		width: 200px;
+		height: 200px;
+		line-height: 200px;
+	}
+	.jackpot-buttons #machine-spin:focus,
+	.jackpot-buttons #machine-spin:active {
+		line-height: 184px;
+	}
+}
