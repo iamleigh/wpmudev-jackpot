@@ -1,0 +1,89 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body, body * {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.container {
+	padding: 20px;
+}
+
+button {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0;
+	padding: 5px 20px;
+	border: 0;
+	border-radius: 4px;
+	background-color: #0076B7;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+button:disabled,
+button[disabled] {
+	background-color: #888;
+	pointer-events: none;
+}
+
+#my-machine {
+	width: 650px;
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: -5px auto;
+}
+
+#my-machine .slot-machine {
+	height: 200px;
+	flex: 0 0 auto;
+	margin: 0 5px;
+	border: 5px solid #333;
+}
+
+#my-machine .slot-machine [class*="img-"] {
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: center;
+	background-size: cover;
+	color: transparent;
+}
+
+#my-machine .img-one {
+	background-image: url('../images/img-one.png');
+}
+
+#my-machine .img-two {
+	background-image: url('../images/img-two.png');
+}
+
+#my-machine .img-three {
+	background-image: url('../images/img-three.png');
+}
+
+#my-machine-buttons {
+	width: 650px;
+	margin: 30px auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#my-machine-buttons button {
+	flex: 0 0 auto;
+	margin: 0 10px;
+}
