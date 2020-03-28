@@ -1,6 +1,6 @@
 {
 	"name": "jackpot",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "",
 	"author": "Leighton Sapir (WPMU DEV Team)",
 	"contributors": [
@@ -25,12 +25,11 @@
 		"jquery-slotmachine": "^4.0.1"
 	},
 	"scripts": {
-		"clean": "rm -rf ./_dist/",
-		"build": "gulp copy-required && npm run clean && gulp prepare-files",
-		"publish:master": "gulp publish:master",
-		"publish:showcase": "gulp publish:showcase",
-		"release:patch": "npm version patch --no-git-tag-version && npm run build && npm run publish:master && npm run publish:showcase",
-		"release:minor": "npm version minor --no-git-tag-version && npm run build && npm run publish:master && npm run publish:showcase",
-		"release:major": "npm version major --no-git-tag-version && npm run build && npm run publish:master && npm run publish:showcase"
+		"clean": "rm -rf _dist/",
+		"build": "npm run clean && gulp copy-required && gulp prepare-files",
+		"publish": "gulp publish:master && gulp publish:showcase",
+		"release:patch": "npm version patch --no-git-tag-version && npm run build && npm run publish",
+		"release:minor": "npm version minor --no-git-tag-version && npm run build && npm run publish",
+		"release:major": "npm version major --no-git-tag-version && npm run build && npm run publish"
 	}
 }

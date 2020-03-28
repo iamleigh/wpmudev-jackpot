@@ -14,7 +14,7 @@ var master = {};
 master.base = './_dist/master/';
 
 var showcase = {};
-showcase.base = './_dist/gh-pages/';
+showcase.base = './_dist/showcase/';
 
 gulp.task( 'copy-required', function() {
 
@@ -78,7 +78,7 @@ gulp.task( 'prepare-files', function() {
 // Release development.
 gulp.task( 'publish:master', () => {
 
-	ghpages.publish( '_dist/master/', {
+	ghpages.publish( './_dist/master/', {
 		branch: 'master',
 		repo: 'https://github.com/iamleigh/wpmudev-jackpot.git',
 		dest: '',
@@ -90,7 +90,7 @@ gulp.task( 'publish:master', () => {
 // Release gh-pages.
 gulp.task( 'publish:showcase', () => {
 
-	ghpages.publish( '_dist/gh-pages/', {
+	ghpages.publish( './_dist/showcase/', {
 		branch: 'gh-pages',
 		repo: 'https://github.com/iamleigh/wpmudev-jackpot.git',
 		dest: '',
