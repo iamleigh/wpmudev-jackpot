@@ -1,0 +1,54 @@
+body, html {
+	height: 100%;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+}
+
+body, body * {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.jackpot-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+
+.jackpot-machine {
+	min-height: 1px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex: 1 1 auto;
+}
+
+.jackpot-machine .slot-machine {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.jackpot-machine .slot-machine > div {
+	width: 100%;
+	min-height: 1px;
+	flex: 1 1 auto;
+}
